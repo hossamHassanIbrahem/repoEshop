@@ -1,9 +1,10 @@
 import React from 'react'
 import './Nav.css'
-import Oneaaaa from './Oneaaaa'
-import Twoaaaa from './Twoaaaa'
-import Threaaa from './Threaaa'
-import Fouraaa from './Fouraaa'
+import Hm from './Hm'
+import Products from './Products'
+import Contactus from './Contactus'
+import Whatsnew from './Whatsnew'
+import Aboutus from './About us'
 import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom'
 
 export const Nav = () => {
@@ -16,23 +17,26 @@ export const Nav = () => {
     </div>
     <BrowserRouter>
       <div className="links">
-        <Link  as={Link} to='/'>home </Link>
-        <Link  as={Link} to='/'>home </Link>
-        <Link  as={Link} to='/'>home </Link>
-        <Link  as={Link} to='/'>home </Link>
-        <Link as={Link} to='/Twoaaaa'>prodact </Link>
-        <Link as={Link} to='/Threaaa'>about us </Link>
-        <Link as={Link} to='/Fouraaa'>log in </Link>
+
+        <Link as={Link} to='/'></Link>
+        <Link as={Link} to='/Hm'>Home</Link>
+        <Link as={Link} to='/Products'>Products</Link>
+        <Link as={Link} to='/Whatsnew'>Whats new</Link>
+        <Link as={Link} to='/Aboutus'>Aboutus</Link>
+        <Link as={Link} to='/Contactus'>Contact us</Link>
       </div>
       <div>
         <Routes>
-          <Route path='/' element={<Oneaaaa/>}/>
-          <Route path='/Twoaaaa' element={<Twoaaaa/>}/>
-          <Route path='/Threaaa' element={<Threaaa/>}/>
-          <Route path='/Fouraaa' element={<Fouraaa/>}/>
+          <Route path='/'/>
+          <Route path='/Hm' element={<Hm/>}/>
+          <Route path='/Products' element={<Products/>}/>
+          <Route path='/Whatsnew' element={<Whatsnew/>}/>
+          <Route path='/Aboutus' element={<Aboutus/>}/>
+          <Route path='/Contactus' element={<Contactus/>}/>
         </Routes>
       </div>
       </BrowserRouter>
+      my main page
     </>
   )
 }

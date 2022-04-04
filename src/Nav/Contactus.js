@@ -1,17 +1,17 @@
 import React from 'react';
 
 //mport Menu from './Menu'
-const Twoaaaa=()=>{
+const Contactus=()=>{
     return(
         <>
              strat
             <br></br>
             
-            Twoaaaa
+            contact me 
 
             <br></br>
              end 
         </>
     )
 }
-export default Twoaaaa
+export default Contactus
