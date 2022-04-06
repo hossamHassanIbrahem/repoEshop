@@ -1,0 +1,52 @@
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 60px 40px;
+    display: grid;
+    justify-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(208, 9, 9);
+}
+
+footer img {
+    max-width: 30px;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    max-width: 30px;
+    transform: rotate(0.1turn);
+    transition: 0.3s;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer .reach-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .reach-us-items {
+    margin: 0px 10px 10px;
+    transition: 0.3s;
+}
+
+footer .reach-us-items:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+

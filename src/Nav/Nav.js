@@ -27,7 +27,7 @@ export const Nav = () => {
       </div>
       <div>
         <Routes>
-          <Route path='/'/>
+          <Route path='/' element={<Hm/>}/>
           <Route path='/Hm' element={<Hm/>}/>
           <Route path='/Products' element={<Products/>}/>
           <Route path='/Whatsnew' element={<Whatsnew/>}/>
