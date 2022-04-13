@@ -77,3 +77,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <Link as={Link} to='../cat/Desktop.js'>monitors</Link>
 <Link as={Link} to='../cat/Desktop.js'>storage</Link>
 <Link as={Link} to='../cat/Desktop.js'>Laptops</Link>
+
+
+
+
+  <BrowserRouter>
+      <Routes>
+      <Route path='/Desktop' element={<Desktop/>}/>
+      </Routes>
+
+    </BrowserRouter>
+
+
+    
+
+<BrowserRouter>
+  <div className={cate.cateLinks}> 
+    <Link as={Link} to='/Desktop'>Desktop</Link>
+    <Link as={Link} to='/Gaming'>Gaming</Link>
+    <Link as={Link} to='/Laptops'>Laptops</Link>
+    <Link as={Link} to='/Monitors'>Monitors</Link>
+    <Link as={Link} to='/Storage'>Storage</Link>
+  </div>
+<Routes>
+  <Route path='/Desktop' element={<Desktop/>}/>
+  <Route path='/Gaming' element={<Gaming/>}/>
+  <Route path='/Laptops' element={<Laptops/>}/>
+  <Route path='/Monitors' element={<Monitors/>}/>
+  <Route path='/Storage' element={<Storage/>}/>
+
+</Routes>
+
+</BrowserRouter>
+<Categories/>

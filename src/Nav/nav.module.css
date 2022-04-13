@@ -2,7 +2,7 @@
 
 
 .links{ 
-    width: 80%;
+
     margin: 0 ;
     color:#ffffff;
     padding-left: 50px;
@@ -32,7 +32,6 @@ a:hover{
 }
 .links {
     letter-spacing: 1.5px;
-    flex-wrap: wrap;
     padding-right: 30px;
     display: flex;
     width: 100%;
@@ -41,6 +40,9 @@ a:hover{
     color: rgb(0, 0, 0);
     position: fixed;
     z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -68,7 +70,9 @@ Link{
     transition: 0.3s;
     color: white;
 }
-
+.cart{
+     margin-left: 40%;
+}
 
 /* nav .nav-list a:hover {
     color: rgb(208, 9, 9);

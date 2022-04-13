@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-* {
+main {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
 
-.body {
+.nbody {
     background-image: url('../../public/bg.jpg');
     background-position: fixed;
     background-attachment: fixed;
@@ -18,13 +18,15 @@
 }
 
 .Signin {
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 410px;
     min-width: 250px;
     margin-bottom: 50px;
-    background-color: aliceblue;
+
+    /* background-color: aliceblue; */
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

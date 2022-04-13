@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './hm.module.css'
+import Topproducts  from './Topproducts'
 
 export const Hm = () => {
   return (
@@ -19,13 +20,14 @@ export const Hm = () => {
 
             </div>
                 <div className={style.image }>
-                <img src="../../public/hero-img.png" alt=""/>
+                <img src="/hero-img.png" alt="alt"/>
             
            
             </div>    
         </section>
       
     </main>
+    <Topproducts/>
     
     </>
    

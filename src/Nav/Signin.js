@@ -1,11 +1,11 @@
 import React from 'react';
-import style from './contactus.module.css'
+import style from './signin.module.css'
 
 const Signin=()=>{
     return(
-    <>
+    <main>
 
-        <body className={style.body}>
+        <body className={style.nbody}>
         <br></br>
         <form action="" method="post">
         <main className={style.Signin}>
@@ -53,7 +53,7 @@ const Signin=()=>{
         </main>
         </form>
      </body>
-    </>
+    </main>
     )
 }
 export default Signin

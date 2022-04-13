@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background: #000;
+
 
 }
 
@@ -27,9 +28,9 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 120px 70px 70px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+    align-items: center;
 
 
 }
