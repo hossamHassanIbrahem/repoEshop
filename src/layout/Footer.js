@@ -7,15 +7,15 @@ return(
         <div>
             <div className={foot.reach_us}>
                 <div className={foot.reach_us_items}>
-                    <a href="#"><img src="/time.png" alt=""/></a>
+                    <a href="http://localhost:3000/Aboutus"><img src="/time.png" alt=""/></a>
                     <p>Working Hours</p>
                 </div>
                 <div className={foot.reach_us_items}>
-                    <a href="#"><img src="/custservies.png" alt=""/></a>
+                    <a href="http://localhost:3000/Aboutus"><img src="/custservies.png" alt=""/></a>
                     <p>Customer Service</p>
                 </div>
                 <div className={foot.reach_us_items}>
-                    <a href="#"><img src="/location.png" alt=""/></a>
+                    <a href="http://localhost:3000/Aboutus"><img src="/location.png" alt=""/></a>
                     <p>Locations</p>
                 </div>
             </div>

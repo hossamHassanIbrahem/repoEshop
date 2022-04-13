@@ -3,7 +3,7 @@ footer {
     color: aliceblue;
     text-align: center;
     font-weight: 600;
-    padding: 30px 60px 40px;
+    padding: 120px 60px 40px;
     display: grid;
     justify-items: center;
     font-family: 'Times New Roman', Times, serif;
@@ -35,17 +35,17 @@ footer p {
     font-size: 10px;
 }
 
-footer .reach-us {
+footer .reach_us {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-footer .reach-us-items {
+footer .reach_us_items {
     margin: 0px 10px 10px;
     transition: 0.3s;
 }
 
-footer .reach-us-items:hover {
+footer .reach_us_items:hover {
     transform: scale(1.2);
     transition: 0.3s;
 }

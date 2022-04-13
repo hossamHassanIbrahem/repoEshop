@@ -1,42 +1,43 @@
 import React from 'react'
-import './Nav.css'
+import  './Nav.css'
+import style from './nav.module.css'
 import Hm from './Hm'
-import Products from './Products'
-import Contactus from './Contactus'
-import Whatsnew from './Whatsnew'
+import Signin from './Signin'
+import Topproducts from './Topproducts'
 import Aboutus from './About us'
+import Categories from '../cat/Categories'
 import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom'
 
-export const Nav = () => {
+const Nav = () => {
   return (
     <>
+
     <div className="logo">
-    <h1>
-        our idea
-    </h1>
+
     </div>
     <BrowserRouter>
-      <div className="links">
+      <div className={style.links}>
 
-        <Link as={Link} to='/'></Link>
+
         <Link as={Link} to='/Hm'>Home</Link>
-        <Link as={Link} to='/Products'>Products</Link>
-        <Link as={Link} to='/Whatsnew'>Whats new</Link>
+        <Link as={Link} to='/../cat/Categories'>Categories
+          
+        </Link>
+        <Link as={Link} to='/Topproducts'>Top products</Link>
         <Link as={Link} to='/Aboutus'>Aboutus</Link>
-        <Link as={Link} to='/Contactus'>Contact us</Link>
+        <Link as={Link} to='/Signin'>Signin/Up</Link>
       </div>
       <div>
         <Routes>
           <Route path='/' element={<Hm/>}/>
           <Route path='/Hm' element={<Hm/>}/>
-          <Route path='/Products' element={<Products/>}/>
-          <Route path='/Whatsnew' element={<Whatsnew/>}/>
+          <Route path='../cat/Categories' element={<Categories/>}/>
+          <Route path='/Topproducts' element={<Topproducts/>}/>
           <Route path='/Aboutus' element={<Aboutus/>}/>
-          <Route path='/Contactus' element={<Contactus/>}/>
+          <Route path='/Signin' element={<Signin/>}/>
         </Routes>
       </div>
       </BrowserRouter>
-      my main page
     </>
   )
 }

@@ -1,17 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+main,
+header {
+    display: block;
+    place-items: center;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+/* //////////////////////////////////////////////////////////////// */
 /* Hero */
 .hero {
-    background-image: url('../../public/keybaoard.jpg');
+    background-image: url(../../public/keybaoard.jpg);
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 120px 70px 70px;
-    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.image img  {
+    width: 100%;
+    position: relative;
+    animation: MoveUpDown 2s linear infinite;
+
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
 }
 
 .hero .intro {
     margin-top: 60px;
+}
+
+pre {
+    font-family: 'Permanent Marker', cursive;
+    line-height: 25px;
 }
 
 .hero .intro h1 {
@@ -24,6 +70,8 @@
     font-size: 20px;
     color: white;
     letter-spacing: 3px;
+    margin-top: 7px;
+
 }
 
 .hero .intro p {
@@ -33,71 +81,33 @@
     letter-spacing: 2px;
 }
 
-span {
+.intro span {
     color: rgb(208, 9, 9);
 }
 
-.hero img {
-    width: 80%;
-}
-
-button {
+.hero button {
     font-size: 15px;
     font-weight: 700;
     background-color: #007bff;
-    color: aliceblue;
+    border-color: #007bff;
+    color: aliceblue;;
     padding: 15px;
     border-radius: 10px;
-    width: 20%;
-    border-color: #007bff;
+    width: 30%;
+    font-family: 'Permanent Marker', cursive;
     transition: 0.3s;
-    margin-top: 30px;
+    margin-top: 10px;
     letter-spacing: 3px;
     box-shadow: 0 4px 8px 0 rgba(122, 117, 117, 0.2), 0 6px 20px 0 rgba(180, 164, 164, 0.19);
 }
 
-button:hover {
+.hero button:hover {
     background-color: #125399;
+    border-color: #125399;
     transition: 0.3s;
     cursor: pointer;
     transform: scale(1.1);
-    border-color: #125399;
     border-radius: 10px;
-}
-
-/* Discount */
-.discount {
-    margin: 30px 70px 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.categories h1 {
-    text-align: center;
-    font-size: 45px;
-    margin-top: 45px;
-}
-
-.discount_item img {
-    width: 400px;
-    opacity: 0.9;
-    transition: 0.3s;
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.6), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
-}
-
-.discount_item img:hover {
-    transform: scale(1.04);
-    transition: 0.3s;
-    cursor: pointer;
-    opacity: 1;
-}
-
-.products-cat h1 {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 40px;
 }
 
 @media(max-width:960px) {
@@ -109,8 +119,12 @@ button:hover {
         font-size: 1em;
     }
 
-    .discount_item img {
+    .discount-item img {
         width: 350px;
+    }
+
+    .hero button {
+        width: 30%;
     }
 }
 
@@ -137,16 +151,10 @@ button:hover {
     button {
         font-size: 10px;
         font-weight: 700;
-        background-color: #007bff;
-        color: aliceblue;
         padding: 15px;
         border-radius: 10px;
-        width: 20%;
-        border-color: #007bff;
-        transition: 0.3s;
         margin-top: 30px;
         letter-spacing: 3px;
-        box-shadow: 0 4px 8px 0 rgba(122, 117, 117, 0.2), 0 6px 20px 0 rgba(180, 164, 164, 0.19);
     }
 }
 
@@ -174,6 +182,11 @@ button:hover {
         margin-top: 40px;
         font-size: 7.5vw;
     }
+
+    .hero button {
+        width: 30%;
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:500px) {
@@ -182,23 +195,111 @@ button:hover {
     }
 
     .hero .intro h1 {
-        font-size: 4.8vw;
+        font-size: 5vw;
         color: white;
         letter-spacing: 3px;
     }
-}
-/* ///////////////////////////////////////////////////////////////////// */
-/* General */
-body.items,
-.meg_Aegis_Ti5_12th {
-    background-color: black;
+
+    .hero button {
+        font-size: 15px;
+        font-weight: 700;
+        color: aliceblue;
+        padding: 15px;
+        border-radius: 10px;
+        width: 20%;
+    }
+
+    .hero button {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .image img {
+        width: 90%;
+    }
 }
 
-/* //////////////////////////////////////// */
-/* Desktop */
-main.items h1 {
-    margin: 60px 30px -10px;
-    color: white;
+/* //////////////////////////////////// */
+/* Categories */
+.landing-body {
+    text-align: center;
+    margin: 55px 50px 70px;
+}
+
+.top h1 {
+    margin: 70px 0 40px;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.categories h1 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.categories span {
+    font-size: 40px;
+    color: rgb(208, 9, 9);
+}
+
+.categories-container,
+.top-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.categories-item,
+.top-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    border: solid;
+    padding-bottom: 7px;
+    border-width: 0.1px;
+    border-color: rgb(98, 81, 81, 0.5);
+}
+
+.categories-item:hover,
+.top-item:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    transition: 0.3;
+    color: rgb(208, 9, 9);
+    /* background-color: #babfc6; */
+    background-color: #2b2c2d;
+}
+
+.categories-item img {
+    max-width: 330px;
+}
+
+.top-item img {
+    max-width: 250px;
+}
+
+/* //////////////////////////////////////////////////////////// */
+/* items-details */
+body.details {
+    background-color: #000000;
+}
+
+.item-header {
+    margin: 70px;
+    text-align: center;
+    border: solid;
+    border-width: 0.1px;
+    max-width: 350px;
+    min-height: 390px;
+    border-color: rgb(98, 81, 81, 0.5);
+    padding: 10px;
 }
 
 .items_products {
@@ -210,71 +311,16 @@ main.items h1 {
     color: white;
 }
 
-.items_product {
-    display: grid;
-    text-align: center;
-    border: solid;
-    border-width: 0.1px;
-    max-width: 350px;
-    min-height: 390px;
-    border-color: rgb(98, 81, 81, 0.5);
-    transition: 0.3s;
-    padding: 10px;
+.item-details {
+    color: white;
+    display: flex;
 }
 
-.items_product:hover {
-    transform: scale(1.04);
-    cursor: pointer;
-    transition: 0.3;
-    background-color: #2b2c2d;
-}
-
-.items_product img {
-    max-width: 300px;
-    border-radius: 20px;
-}
-
-.items_product p {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* //////////////////////////////////////////// */
-/* MEG Aegis Ti5 12th */
-.ti5 {
+article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 75px;
 }
 
-.ti5_header h1 {
-    text-align: center;
-    color: white;
-}
-
-.ti5_header img {
-    position: relative;
-    animation: MoveUpDown 2.5s linear infinite;
-}
-
-@keyframes MoveUpDown {
-    0%, 100% {
-        bottom: 0;
-    }
-
-    50% {
-        bottom: 15px;
-    }
-}
-
-table, td, th {
-    border: 1px solid;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-
-    color: aliceblue;
+.bg-color {
+    background-color: #000000;
 }

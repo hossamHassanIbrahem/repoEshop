@@ -1,6 +1,9 @@
 import './App.css';
 import Nav from './Nav/Nav';
-import Footer from './layout/Footer';
+import Footer from './layout/Footer'
+
+
+
 
 
 function App() {
@@ -8,6 +11,7 @@ function App() {
     <>
       <Nav />
       <Footer/>
+    <a href='http://localhost:3000/CartPage'>dddd</a>
     </>
  );
 }
